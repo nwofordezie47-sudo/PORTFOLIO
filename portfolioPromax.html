@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dezie Nwofor | Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div class="bg-mesh">
+        <div class="mesh-gradient mesh-1"></div>
+        <div class="mesh-gradient mesh-2"></div>
+        <div class="mesh-gradient mesh-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo-icon">DN</div>
+                <div class="logo-text">
+                    <div class="name">Dezie Nwofor</div>
+                    <div class="role">Frontend Engineer</div>
+                </div>
+            </div>
+            <nav aria-label="Main">
+                <a href="#top" class="active">Home</a>
+                <a href="#projects">Work</a>
+                <a href="#about">About</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-label">
+                        <span class="status-dot"></span>
+                        Available for work
+                    </div>
+                    <h1>
+                        Crafting <span class="highlight">exceptional</span> digital experiences
+                    </h1>
+                    <p class="lead">
+                        Frontend engineer specializing in building high-performance web applications with modern technologies and pixel-perfect design.
+                    </p>
+                    <div class="cta-group">
+                        <a class="cta primary" href="#projects">
+                            View Projects
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a class="cta secondary" href="#">
+                            <i class="ph ph-file-text"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                    <div class="skills-section">
+                        <div class="skills-label">Core Technologies</div>
+                        <div class="skills">
+                            <div class="chip">HTML5</div>
+                            <div class="chip">CSS3</div>
+                            <div class="chip">JavaScript</div>
+                            <div class="chip">React</div>
+                            <div class="chip">TypeScript</div>
+                            <div class="chip">Responsive Design</div>
+                            <div class="chip">Web Accessibility</div>
+                            <div class="chip">Performance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub" class="social-link">
+                                <i class="ph-fill ph-github-logo"></i>
+                            </a>
+                            <a href="#" aria-label="WhatsApp" class="social-link">
+                                <i class="ph-fill ph-whatsapp-logo"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter/X" class="social-link">
+                                <i class="ph-fill ph-x-logo"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <i class="ph-fill ph-linkedin-logo"></i>
+                            </a>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1+</div>
+                                <div class="stat-label">Years Exp</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label">Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <div class="section-header">
+                    <h2>Featured Work</h2>
+                    <p>A curated selection of my recent projects showcasing creativity and technical excellence</p>
+                </div>
+                <div id="project-grid" class="project-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> Dezie Nwofor – Designed & Built with passion</p>
+        </footer>
+    </div>
+
+    <script>
+        const projects = [
+            {
+                title: "Movie Search App",
+                description: "Advanced movie search platform with real-time API integration, featuring detailed information, ratings, and stunning visuals for every film.",
+                url: "https://movie-search-app-six-lime.vercel.app",
+                tags: ["React", "API", "UI/UX"]
+            },
+            {
+                title: "Weather Dashboard",
+                description: "Real-time weather application providing accurate forecasts, humidity levels, wind speed data, and interactive weather maps for any location worldwide.",
+                url: "https://weather-app-three-psi-44.vercel.app",
+                tags: ["JavaScript", "API", "CSS3"]
+            },
+            {
+                title: "Global News Hub",
+                description: "Stay informed with breaking news from around the world. Features categorized content, search functionality, and a clean reading experience.",
+                url: "https://news-app-tawny-iota.vercel.app/",
+                tags: ["API", "JavaScript", "Responsive"]
+            },
+            {
+                title: "Rock Paper Scissors",
+                description: "Classic game reimagined with modern design, smooth animations, score tracking, and an intelligent AI opponent for endless entertainment.",
+                url: "https://rock-paper-scissors-mu-murex.vercel.app",
+                tags: ["Game Logic", "Animation", "JavaScript"]
+            },
+            {
+                title: "Interactive Quiz Game",
+                description: "Engaging quiz application with timer functionality, score tracking, multiple categories, and instant feedback for an immersive learning experience.",
+                url: "https://tictactoe-black-phi.vercel.app/",
+                tags: ["Interactive", "JavaScript", "UI"]
+            }
+        ];
+
+        const projectGrid = document.getElementById('project-grid');
+        const yearElement = document.getElementById('year');
+        const scrollProgress = document.getElementById('scrollProgress');
+
+        function renderProjects() {
+            if (!projectGrid) return;
+
+            projectGrid.innerHTML = projects.map((project, index) => `
+                <div class="project-card" style="animation-delay: ${index * 0.15}s;">
+                    <a href="${project.url}" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-image">
+                            <i class="ph-fill ph-browser"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">${project.title}</h3>
+                            <p class="project-desc">${project.description}</p>
+                            <div class="project-tags">
+                                ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                            </div>
+                            <span class="project-link">
+                                Explore Project
+                                <i class="ph ph-arrow-right"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function updateScrollProgress() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            scrollProgress.style.transform = `scaleX(${progress / 100})`;
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                    document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+        window.addEventListener('scroll', updateScrollProgress);
+        window.addEventListener('load', () => {
+            renderProjects();
+            updateScrollProgress();
+        });
+    </script>
+</body>
+</html
