@@ -20,8 +20,8 @@
             {
                 title: "Movie Streaming App",
                 description: "High-performance movie streaming platform with a stunning interface, customized video player, and real-time movie list management.",
-                url: "#",
-                tags: ["React", "Express", "MongoDB", "Video"]
+                url: "https://movie-streaming-frontend-tawny.vercel.app/",
+                tags: ["React", "Express","cloudinary", "MongoDB", "Video"]
             },
             {
                 title: "Real-time Messaging App",
