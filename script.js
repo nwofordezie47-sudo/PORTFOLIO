@@ -26,19 +26,19 @@
             {
                 title: "Real-time Messaging App",
                 description: "Interactive real-time chat application allowing users to communicate instantly, featuring persistent message history.",
-                url: "#",
+                url: "https://chat-app-three-lake-24.vercel.app/",
                 tags: ["JavaScript", "WebSockets", "UI/UX"]
             },
             {
                 title: "Tic Tac Toe",
                 description: "Modern take on the classic Tic Tac Toe game featuring smooth animations, score tracking, and an intelligent opponent.",
-                url: "#",
+                url: "https://tictactoe-black-phi.vercel.app/",
                 tags: ["JavaScript", "Game Logic", "Animation"]
             },
             {
                 title: "Football Quiz",
                 description: "Engaging football trivia application with timer functionality, score tracking, and instant feedback for an immersive experience.",
-                url: "#",
+                url: "https://quiz-app-drab-eight.vercel.app/",
                 tags: ["Interactive", "JavaScript", "UI"]
             }
         ];
