@@ -18,27 +18,27 @@
                 tags: ["API", "JavaScript", "Responsive"]
             },
             {
-                title: "Rock Paper Scissors",
-                description: "Classic game reimagined with modern design, smooth animations, score tracking, and an intelligent AI opponent for endless entertainment.",
-                url: "https://rock-paper-scissors-mu-murex.vercel.app",
-                tags: ["Game Logic", "Animation", "JavaScript"]
+                title: "Movie Streaming App",
+                description: "High-performance movie streaming platform with a stunning interface, customized video player, and real-time movie list management.",
+                url: "#",
+                tags: ["React", "Express", "MongoDB", "Video"]
             },
             {
-                title: "Rock Paper Scissors",
-                description: "Classic game reimagined with modern design, smooth animations, score tracking, and an intelligent AI opponent for endless entertainment.",
-                url: "https://rock-paper-scissors-mu-murex.vercel.app",
-                tags: ["Game Logic", "Animation", "JavaScript"]
+                title: "Real-time Messaging App",
+                description: "Interactive real-time chat application allowing users to communicate instantly, featuring persistent message history.",
+                url: "#",
+                tags: ["JavaScript", "WebSockets", "UI/UX"]
             },
             {
-                title: "Real-time messaging app",
-                description: "Classic game reimagined with modern design, smooth animations, score tracking, and an intelligent AI opponent for endless entertainment.",
-                url: "https://rock-paper-scissors-mu-murex.vercel.app",
-                tags: ["Game Logic", "Animation", "JavaScript"]
+                title: "Tic Tac Toe",
+                description: "Modern take on the classic Tic Tac Toe game featuring smooth animations, score tracking, and an intelligent opponent.",
+                url: "#",
+                tags: ["JavaScript", "Game Logic", "Animation"]
             },
             {
-                title: "Interactive Quiz Game",
-                description: "Engaging quiz application with timer functionality, score tracking,and instant feedback for an immersive  experience.",
-                url: "https://quiz-app-drab-eight.vercel.app/",
+                title: "Football Quiz",
+                description: "Engaging football trivia application with timer functionality, score tracking, and instant feedback for an immersive experience.",
+                url: "#",
                 tags: ["Interactive", "JavaScript", "UI"]
             }
         ];
